@@ -1,0 +1,29 @@
+input {
+  width: 40%;
+  padding: 1rem;
+  border-radius: 40px;
+  border: 3px solid whitesmoke;
+  text-align: center;
+  color: whitesmoke;
+  font-size: 1.5rem;
+  background-color: transparent;
+  display: block;
+  margin: auto;
+  margin-top: 2rem;
+
+  &:focus-visible {
+    outline: none;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  input {
+    width: 90%;
+  }
+}
+
+@media screen and  (min-width: 426px) and (max-width: 1024px) {
+  input {
+    width: 60%;
+  }
+}

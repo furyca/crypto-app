@@ -1,0 +1,52 @@
+header {
+  height: 600px;
+  background: linear-gradient(132deg, #FC415A, #591BC5, #212335);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  overflow: hidden;
+
+  @keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+  h1 {
+    color: whitesmoke;
+    font-weight: 600;
+    font-size: 6rem;
+    text-align: center;
+    margin-top: 150px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  header {
+    width: 100%;
+    background-size: 100% 100%;
+
+    h1 {
+      font-size: 2.75rem;
+      width: 95%;
+      margin: auto;
+      text-align: start;
+      font-weight: 600;
+      margin-top: 150px;
+    }
+  }
+}
+
+@media screen and (min-width: 420px) and (max-width: 768px) {
+  header {
+    h1 {
+      font-size: 2.75rem;
+      text-align: center;
+    }
+  }
+}
